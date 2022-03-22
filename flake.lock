@@ -28,6 +28,22 @@
         "type": "github"
       }
     },
+    "bullets-vim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1643523893,
+        "narHash": "sha256-OqVGuf/imrSvj6OFkQw7VmSZ/69WdBx3YBLLv2vrz7U=",
+        "owner": "dkarter",
+        "repo": "bullets.vim",
+        "rev": "f3b4ae71f60b5723077a77cfe9e8776a3ca553ac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dkarter",
+        "repo": "bullets.vim",
+        "type": "github"
+      }
+    },
     "cmp-buffer": {
       "flake": false,
       "locked": {
@@ -481,6 +497,7 @@
     "root": {
       "inputs": {
         "DSL": "DSL",
+        "bullets-vim": "bullets-vim",
         "cmp-buffer": "cmp-buffer_2",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "flake-utils": "flake-utils_3",

@@ -20,6 +20,10 @@
         "github:nvim-telescope/telescope.nvim?rev=b5c63c6329cff8dd8e23047eecd1f581379f1587";
       flake = false;
     };
+    bullets-vim = {
+      url = "github:dkarter/bullets.vim";
+      flake = false;
+    };
     # Used as an example of config not in nixpkgs
     # dracula-nvim = {
     #   url = "github:Mofiqul/dracula.nvim";
@@ -42,7 +46,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs@{ self, flake-utils, nixpkgs, home-manager, neovim, nix2vim, DSL, ... }:
+  outputs = inputs@{ self, flake-utils, nixpkgs, home-manager, neovim, nix2vim, DSL,
+    bullets-vim,
+  ... }:
     let
       # Function to override the source of a package
       withSrc = pkg: src: pkg.overrideAttrs (_: { inherit src; });
@@ -56,6 +62,12 @@
         #   version = "master";
         #   src = dracula-nvim;
         # };
+        bullets = prev.vimUtils.buildVimPluginFrom2Nix {
+          pname = "bullets-vim";
+          version = "master";
+          src = bullets-vim;
+        };
+        rawLuaConfig = prev.writeText "custom.lua" (builtins.readFile ./config.lua);
         # Generate our init.lua from neoConfig using vim2nix transpiler
         neovimConfig = let
           luaConfig = prev.luaConfigBuilder {
@@ -80,14 +92,18 @@
           # Build with NodeJS
           withNodeJs = true;
 
+
           # Passing in raw lua config
           configure.customRC = ''
+            colorscheme nord
             luafile ${neovimConfig}
+            luafile ${rawLuaConfig}
           '';
 
           configure.packages.myVimPackage.start = with prev.vimPlugins; [
             # Adding reference to our custom plugin
             # dracula
+            bullets
 
             # Overwriting plugin sources with different version
             (withSrc telescope-nvim inputs.telescope-src)
@@ -98,7 +114,7 @@
             # Plugins from nixpkgs
             # vim-better-whitespace
             # fzf-vim
-            # nord-vim
+            nord-vim
             # vim-easy-align
             # vim-tagbar(?)
             symbols-outline-nvim

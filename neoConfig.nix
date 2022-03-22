@@ -64,7 +64,6 @@
   # Symbol-outline: [[[
   # open by <leader>T
   nnoremap."<leader>T" = "<cmd>SymbolsOutline<cr>";
-  # Markdown
   # ]]]
   # ]]]
 
