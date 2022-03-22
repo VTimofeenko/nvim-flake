@@ -1,0 +1,26 @@
+✓ 1. Get treesitter highlighting to work for nix
+2. Graft base config
+3. Graft plugins
+4. Graft path-like plugins
+5. Figure out how to use system-wide
+
+Treesitter:
+autocomplete?
+Fix annoying 'function name required'
+
+Languages:
+SQL
+Python
+Markdown:
+	With nested syntax?
+HTML
+CSS
+JS
+toml
+yaml
+bash (+shellcheck?)
+-----
+
+NERDtree; think about replacing with fzf
+nvim-web-devicons / devicons
+Jinja shortcuts?
