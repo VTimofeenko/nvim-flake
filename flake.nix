@@ -42,8 +42,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs@{ self, flake-utils, nixpkgs, home-manager, neovim
-    , nix2vim, DSL, ... }:
+  outputs = inputs@{ self, flake-utils, nixpkgs, home-manager, neovim, nix2vim, DSL, ... }:
     let
       # Function to override the source of a package
       withSrc = pkg: src: pkg.overrideAttrs (_: { inherit src; });
@@ -102,6 +101,7 @@
             # nord-vim
             # vim-easy-align
             # vim-tagbar(?)
+            symbols-outline-nvim
             vim-surround
             vim-commentary
             nerdtree

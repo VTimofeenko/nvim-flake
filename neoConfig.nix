@@ -61,9 +61,9 @@
   # Plugin settings [[[
   # Nerdtree: toggle open by <leader>n
   nnoremap."<leader>n" = "<cmd>NERDTreeToggle<cr>";
-  # Tagbar: [[[
+  # Symbol-outline: [[[
   # open by <leader>T
-  nnoremap."<leader>T" = "<cmd>TagbarToggle<cr>";
+  nnoremap."<leader>T" = "<cmd>SymbolsOutline<cr>";
   # Markdown
   # ]]]
   # ]]]
