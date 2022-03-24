@@ -2,13 +2,13 @@
 - [x] Get treesitter highlighting to work for nix
 - [x] Graft base config
 - [ ] Graft plugins
-
-	* [x] Markdown:
-	* [x] Custom bindings
-	* [x] dkarter/bullets.vim
-	* [x] Prose-specific plugin
-	* [x] glow-nvim
-	* [x] Redact-pass
+    * [x] Markdown:
+    * [x] Custom bindings
+    * [x] dkarter/bullets.vim
+    * [x] Prose-specific plugin
+    * [x] glow-nvim
+    * [x] Redact-pass
+    * [x] Json: pretty print
 - [ ] Graft path-like plugins
 - [ ] Figure out how to use system-wide
 
@@ -20,7 +20,6 @@
     - [ ] SQL
     - [ ] Python
     - [ ] Markdown: nested syntax?
-
     - [ ] HTML
     - [ ] CSS
     - [ ] JS
