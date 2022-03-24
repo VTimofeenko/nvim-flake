@@ -449,6 +449,22 @@
         "type": "github"
       }
     },
+    "redact-pass-unwrapped": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613443657,
+        "narHash": "sha256-vqCA7Vux10ujft7Q5QLUbfSPTk1dKi8iQPn3k7A1io0=",
+        "ref": "master",
+        "rev": "403a44dc32533e631384dfcca40d520b9088b0db",
+        "revCount": 35,
+        "type": "git",
+        "url": "https://dev.sanctum.geek.nz/code/vim-redact-pass.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://dev.sanctum.geek.nz/code/vim-redact-pass.git"
+      }
+    },
     "rnix-lsp": {
       "inputs": {
         "naersk": "naersk",
@@ -506,6 +522,7 @@
         "nix2vim": "nix2vim",
         "nixpkgs": "nixpkgs_3",
         "nvim-cmp": "nvim-cmp_2",
+        "redact-pass-unwrapped": "redact-pass-unwrapped",
         "rnix-lsp": "rnix-lsp_2",
         "telescope-src": "telescope-src_2"
       }

@@ -24,6 +24,11 @@
       url = "github:dkarter/bullets.vim";
       flake = false;
     };
+    redact-pass-unwrapped = {
+      # url = "github:zx2c4/password-store?dir=contrib/vim";
+      url = "git+https://dev.sanctum.geek.nz/code/vim-redact-pass.git";
+      flake = false;
+    };
     # Used as an example of config not in nixpkgs
     # dracula-nvim = {
     #   url = "github:Mofiqul/dracula.nvim";
@@ -48,6 +53,7 @@
   };
   outputs = inputs@{ self, flake-utils, nixpkgs, home-manager, neovim, nix2vim, DSL,
     bullets-vim,
+    redact-pass-unwrapped,
   ... }:
     let
       # Function to override the source of a package
@@ -66,6 +72,11 @@
           pname = "bullets-vim";
           version = "master";
           src = bullets-vim;
+        };
+        redact-pass = prev.vimUtils.buildVimPluginFrom2Nix {
+          pname = "red";
+          version = "master";
+          src = redact-pass-unwrapped;
         };
         rawLuaConfig = prev.writeText "custom.lua" (builtins.readFile ./config.lua);
         # Generate our init.lua from neoConfig using vim2nix transpiler
@@ -104,6 +115,7 @@
             # Adding reference to our custom plugin
             # dracula
             bullets
+            redact-pass
 
             # Overwriting plugin sources with different version
             (withSrc telescope-nvim inputs.telescope-src)

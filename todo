@@ -6,7 +6,7 @@
 	✓ * dkarter/bullets.vim
 	✓ * Prose-specific plugin
 
-	Redact-pass
+	✓ Redact-pass
 4. Graft path-like plugins
 5. Figure out how to use system-wide
 
