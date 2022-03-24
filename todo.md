@@ -9,6 +9,10 @@
     * [x] glow-nvim
     * [x] Redact-pass
     * [x] Json: pretty print
+    * [ ] Pass:
+        * [ ] automatic username macro
+        * [ ] automatic email macro
+    * [ ] Automatic whitespace remover
 - [ ] Graft path-like plugins
 - [ ] Figure out how to use system-wide
 
@@ -25,7 +29,7 @@
     - [ ] JS
     - [ ] toml
     - [ ] yaml
-    - [ ] bash (+shellcheck?)
+    - [ ] bash
 
 # Misc
 - [ ] NERDtree; think about replacing with fzf or telescope
@@ -38,4 +42,11 @@
     - [ ] preview within?
     - [ ] bold does not work at the end of the file
     - [ ] the chosen split
-- [ ] Python: black autorunner
+- Python: 
+    - [ ] black autorunner
+    - [ ] textwidth global (including black)
+- bash
+    * [ ] Syntastic(?)
+    * [ ] Shellcheck(?)
+- Yaml: enable cursorline and column
+- Plugins from notion
