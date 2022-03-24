@@ -138,6 +138,7 @@
             lspkind-nvim
             nerdcommenter
             nvim-lspconfig
+            glow-nvim
             # plenary-nvim
             # popup-nvim
 
