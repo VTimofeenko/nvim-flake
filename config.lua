@@ -42,3 +42,9 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
         pattern = { "/dev/shm/pass.?*/?*.txt", "$TMPDIR/pass.?*/?*.txt", "/tmp/pass.?*/?*.txt" },
 	command = "nnoremap <leader>u oUsername: | nnoremap <leader>e oEmail: ",
 })
+
+-- Better whitespace
+vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*",
+	command = ":StripWhitespace",
+})

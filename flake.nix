@@ -109,6 +109,7 @@
           # Passing in raw lua config
           configure.customRC = ''
             colorscheme nord
+
             luafile ${neovimConfig}
             luafile ${rawLuaConfig}
           '';
@@ -126,7 +127,7 @@
             (withSrc cmp-nvim-lsp inputs.cmp-nvim-lsp)
 
             # Plugins from nixpkgs
-            # vim-better-whitespace
+            vim-better-whitespace
             # fzf-vim
             nord-vim
             # vim-easy-align

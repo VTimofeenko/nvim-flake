@@ -1,7 +1,7 @@
 # Main section
 - [x] Get treesitter highlighting to work for nix
 - [x] Graft base config
-- [ ] Graft plugins
+- [X] Graft plugins
     * [x] Markdown:
     * [x] Custom bindings
     * [x] dkarter/bullets.vim
@@ -12,7 +12,7 @@
     * [x] Pass:
         * [x] automatic username macro
         * [x] automatic email macro
-    * [ ] Automatic whitespace remover vim-better-whitespace
+    * [X] Automatic whitespace remover vim-better-whitespace
 - [ ] Graft path-like plugins
 - [ ] Figure out how to use system-wide
 
