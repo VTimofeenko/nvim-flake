@@ -36,3 +36,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = "json",
 	command = "nnoremap <leader>pp :%!jq '.'<CR>",
 })
+
+-- Pass custom files
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+        pattern = { "/dev/shm/pass.?*/?*.txt", "$TMPDIR/pass.?*/?*.txt", "/tmp/pass.?*/?*.txt" },
+	command = "nnoremap <leader>u oUsername: | nnoremap <leader>e oEmail: ",
+})

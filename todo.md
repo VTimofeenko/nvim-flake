@@ -9,10 +9,10 @@
     * [x] glow-nvim
     * [x] Redact-pass
     * [x] Json: pretty print
-    * [ ] Pass:
-        * [ ] automatic username macro
-        * [ ] automatic email macro
-    * [ ] Automatic whitespace remover
+    * [x] Pass:
+        * [x] automatic username macro
+        * [x] automatic email macro
+    * [ ] Automatic whitespace remover vim-better-whitespace
 - [ ] Graft path-like plugins
 - [ ] Figure out how to use system-wide
 
@@ -42,6 +42,7 @@
     - [ ] preview within?
     - [ ] bold does not work at the end of the file
     - [ ] the chosen split
+    - [ ] mkdx
 - Python: 
     - [ ] black autorunner
     - [ ] textwidth global (including black)
