@@ -38,3 +38,4 @@
     - [ ] preview within?
     - [ ] bold does not work at the end of the file
     - [ ] the chosen split
+- [ ] Python: black autorunner
