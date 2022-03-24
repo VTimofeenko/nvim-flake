@@ -35,6 +35,7 @@
 - [ ] NERDtree; think about replacing with fzf or telescope
 - [ ] nvim-web-devicons / devicons
 - [ ] Jinja shortcuts?
+- [ ] Add clear search shortcut
 
 - Markdown:
     - [ ] add snippet for a link?
