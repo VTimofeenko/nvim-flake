@@ -97,6 +97,7 @@
             clang
             # rust-analyzer
             fzf
+            jq
             glow
             inputs.rnix-lsp.defaultPackage.x86_64-linux
           ];

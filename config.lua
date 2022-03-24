@@ -31,3 +31,8 @@ for _, file_format in ipairs(prose_file_formats) do
 	})
 end
 
+-- Json pretty print
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "json",
+	command = "nnoremap <leader>pp :%!jq '.'<CR>",
+})
