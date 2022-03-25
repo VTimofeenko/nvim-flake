@@ -124,7 +124,7 @@
 
   use.cmp.setup = callWith {
     mapping = {
-      "['<C-n>']" = rawLua "require('cmp').mapping.select_next_item({ behavior = require('cmp').SelectBehavior.Insert })";
+      "['<Tab>']" = rawLua "require('cmp').mapping.select_next_item({ behavior = require('cmp').SelectBehavior.Insert })";
       "['<C-p>']" = rawLua "require('cmp').mapping.select_prev_item({ behavior = require('cmp').SelectBehavior.Insert })";
       "['<Down>']" = rawLua "require('cmp').mapping.select_next_item({ behavior = require('cmp').SelectBehavior.Select })";
       "['<Up>']" = rawLua "require('cmp').mapping.select_prev_item({ behavior = require('cmp').SelectBehavior.Select })";
