@@ -137,6 +137,9 @@
     sources = [
       { name = "nvim_lsp"; }
       { name = "buffer"; }
+      { name = "path";
+      option = { trailing_slash = true;};
+    }
     ];
   };
 

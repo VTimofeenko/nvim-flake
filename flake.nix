@@ -132,6 +132,7 @@
             nord-vim
             # vim-easy-align
             # vim-tagbar(?)
+            cmp-path
             symbols-outline-nvim
             vim-surround
             vim-commentary

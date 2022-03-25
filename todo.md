@@ -13,7 +13,7 @@
         * [x] automatic username macro
         * [x] automatic email macro
     * [X] Automatic whitespace remover vim-better-whitespace
-- [ ] Graft path-like plugins
+- [X] Graft path-like plugins
 - [ ] Figure out how to use system-wide
 
 # Treesitter improvements
