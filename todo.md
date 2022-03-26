@@ -14,7 +14,7 @@
         * [x] automatic email macro
     * [X] Automatic whitespace remover vim-better-whitespace
 - [X] Graft path-like plugins
-- [ ] Figure out how to use system-wide
+- [X] Figure out how to use system-wide
 
 # Treesitter improvements
 - Treesitter:
