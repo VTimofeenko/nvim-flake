@@ -15,6 +15,7 @@
     * [X] Automatic whitespace remover vim-better-whitespace
 - [X] Graft path-like plugins
 - [X] Figure out how to use system-wide
+- [X] Auto close brackets
 
 # Treesitter improvements
 - Treesitter:

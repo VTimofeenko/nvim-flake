@@ -128,6 +128,7 @@
 
             # Plugins from nixpkgs
             vim-better-whitespace
+            nvim-autopairs
             # fzf-vim
             nord-vim
             # vim-easy-align

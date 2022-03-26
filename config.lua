@@ -56,3 +56,5 @@ cmp.setup.cmdline(':', {
                 { name = 'path', option = { trailing_slash = true, }, }
         })
 })
+
+require('nvim-autopairs').setup{}
