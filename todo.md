@@ -22,15 +22,15 @@
     - [ ] autocomplete?
     - [ ] Fix annoying 'function name required'
     - [ ] Languages:
-    - [ ] SQL
-    - [ ] Python
-    - [ ] Markdown: nested syntax?
-    - [ ] HTML
-    - [ ] CSS
-    - [ ] JS
-    - [ ] toml
-    - [ ] yaml
-    - [ ] bash
+        - [ ] SQL
+        - [ ] Python
+        - [ ] Markdown: nested syntax?
+        - [ ] HTML
+        - [ ] CSS
+        - [ ] JS
+        - [ ] toml
+        - [ ] yaml
+        - [ ] bash
 
 # Misc
 - [ ] NERDtree; think about replacing with fzf or telescope
