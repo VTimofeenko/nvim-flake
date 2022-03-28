@@ -33,6 +33,7 @@
         - [ ] bash
 
 # Misc
+- [X] EasyAlign
 - [ ] NERDtree; think about replacing with fzf or telescope
 - [ ] nvim-web-devicons / devicons
 - [ ] Jinja shortcuts?
@@ -45,7 +46,7 @@
     - [ ] bold does not work at the end of the file
     - [ ] the chosen split
     - [ ] mkdx
-- Python: 
+- Python:
     - [ ] black autorunner
     - [ ] textwidth global (including black)
 - bash
@@ -53,3 +54,7 @@
     * [ ] Shellcheck(?)
 - Yaml: enable cursorline and column
 - Plugins from notion
+- Nix:
+    * [ ] Fix let..in indent
+    * [X] set ts=2 and shiftwidth=2
+- Context
