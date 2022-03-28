@@ -129,9 +129,9 @@
             # Plugins from nixpkgs
             vim-better-whitespace
             nvim-autopairs
+            vim-easy-align
             # fzf-vim
             nord-vim
-            # vim-easy-align
             # vim-tagbar(?)
             cmp-path
             symbols-outline-nvim
