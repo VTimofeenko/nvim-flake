@@ -60,3 +60,8 @@ cmp.setup.cmdline(':', {
 })
 
 require('nvim-autopairs').setup{}
+-- Nix custom settings
+vim.api.nvim_create_autocmd("FileType", {
+        pattern = "nix",
+        command = "set tabstop=2 | set shiftwidth=2 | set expandtab | set autoindent",
+})
