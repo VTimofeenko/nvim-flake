@@ -134,6 +134,7 @@
             nord-vim
             # vim-tagbar(?)
             cmp-path
+            cmp-cmdline
             symbols-outline-nvim
             vim-surround
             vim-commentary

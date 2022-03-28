@@ -54,6 +54,8 @@ local cmp = require'cmp'
 cmp.setup.cmdline(':', {
         sources = cmp.config.sources({
                 { name = 'path', option = { trailing_slash = true, }, }
+        }, {
+                { name = 'cmdline' }
         })
 })
 
