@@ -20,6 +20,8 @@
 # Treesitter improvements
 - Treesitter:
     - [ ] autocomplete?
+    - [ ] Autoindent & smartindent
+    - [ ] Highlight TODO
     - [ ] Fix annoying 'function name required'
     - [ ] Languages:
         - [ ] SQL
