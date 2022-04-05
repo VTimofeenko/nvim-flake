@@ -65,3 +65,8 @@ vim.api.nvim_create_autocmd("FileType", {
         pattern = "nix",
         command = "set tabstop=2 | set shiftwidth=2 | set expandtab | set autoindent",
 })
+
+-- Custom shortcuts
+-- Clear the screeen from garbage
+vim.api.nvim_set_keymap('n', '<leader>l', ':nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>', {noremap = true, silent=true})
+
