@@ -1,7 +1,7 @@
 { pkgs, dsl }: with dsl; {
 
   vim.g = {
-    mapleader = ",";
+    mapleader = " ";
     noshowmode = true;
     completeopt = "menu,menuone,noselect";  # TODO: complete
   };
