@@ -19,6 +19,7 @@
 
 # Treesitter improvements
 - Treesitter:
+    * [ ] nvim-orgmode
     - [ ] autocomplete?
     - [ ] Autoindent & smartindent
     - [ ] Highlight TODO
