@@ -24,6 +24,10 @@
       url = "github:dkarter/bullets.vim";
       flake = false;
     };
+    nvim-orgmode-src = {
+      url = "github:nvim-orgmode/orgmode";
+      flake = false;
+    };
     redact-pass-unwrapped = {
       # url = "github:zx2c4/password-store?dir=contrib/vim";
       url = "git+https://dev.sanctum.geek.nz/code/vim-redact-pass.git";
@@ -125,6 +129,7 @@
             (withSrc cmp-buffer inputs.cmp-buffer)
             (withSrc nvim-cmp inputs.nvim-cmp)
             (withSrc cmp-nvim-lsp inputs.cmp-nvim-lsp)
+            (withSrc orgmode inputs.nvim-orgmode-src)
 
             # Plugins from nixpkgs
             vim-better-whitespace
@@ -152,6 +157,7 @@
             (prev.vimPlugins.nvim-treesitter.withPlugins (plugins: with plugins; [
               tree-sitter-nix
               tree-sitter-rust
+              tree-sitter-org-nvim
             ]))
           ];
         };

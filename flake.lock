@@ -449,6 +449,22 @@
         "type": "github"
       }
     },
+    "nvim-orgmode-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1649251101,
+        "narHash": "sha256-PA8Lr+MzhjPlHe9HzNpzk7ehN3sUxq+siBqvQ7VTZZU=",
+        "owner": "nvim-orgmode",
+        "repo": "orgmode",
+        "rev": "40cc0cb938bf847eb657000ad70927272688d21b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-orgmode",
+        "repo": "orgmode",
+        "type": "github"
+      }
+    },
     "redact-pass-unwrapped": {
       "flake": false,
       "locked": {
@@ -522,6 +538,7 @@
         "nix2vim": "nix2vim",
         "nixpkgs": "nixpkgs_3",
         "nvim-cmp": "nvim-cmp_2",
+        "nvim-orgmode-src": "nvim-orgmode-src",
         "redact-pass-unwrapped": "redact-pass-unwrapped",
         "rnix-lsp": "rnix-lsp_2",
         "telescope-src": "telescope-src_2"
