@@ -156,7 +156,7 @@
             # Compile syntaxes into treesitter
             (prev.vimPlugins.nvim-treesitter.withPlugins (plugins: with plugins; [
               tree-sitter-nix
-              tree-sitter-rust
+              /* tree-sitter-rust */
               tree-sitter-org-nvim
             ]))
           ];
