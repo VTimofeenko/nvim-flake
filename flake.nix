@@ -3,7 +3,8 @@
   # Taken from https://github.com/DieracDelta/vimconf_talk
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/master";
+    /* TEMP: Commit before allowAliases is changed, otherwise everything breaks */
+    nixpkgs.url = "github:NixOS/nixpkgs/3344cea254129714919142494ec3e9e75aa09891";
     flake-utils.url = "github:numtide/flake-utils";
     DSL.url = "github:DieracDelta/nix2lua";
     nix2vim = {
@@ -38,6 +39,10 @@
     #   url = "github:Mofiqul/dracula.nvim";
     #   flake = false;
     # };
+    night-owl-vim = {
+      url = "github:haishanh/night-owl.vim";
+      flake = false;
+    };
     nvim-cmp = {
       url = "github:hrsh7th/nvim-cmp";
       flake = false;
@@ -72,6 +77,12 @@
         #   version = "master";
         #   src = dracula-nvim;
         # };
+        night-owl = prev.vimUtils.buildVimPluginFrom2Nix {
+          pname = "night-owl";
+          version = "master";
+          src = inputs.night-owl-vim;
+
+        };
         bullets = prev.vimUtils.buildVimPluginFrom2Nix {
           pname = "bullets-vim";
           version = "master";
@@ -112,7 +123,9 @@
 
           # Passing in raw lua config
           configure.customRC = ''
-            colorscheme nord
+            set termguicolors
+            syntax enable
+            colorscheme night-owl
 
             luafile ${neovimConfig}
             luafile ${rawLuaConfig}
@@ -121,6 +134,7 @@
           configure.packages.myVimPackage.start = with prev.vimPlugins; [
             # Adding reference to our custom plugin
             # dracula
+            night-owl
             bullets
             redact-pass
 
