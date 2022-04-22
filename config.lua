@@ -99,3 +99,10 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = "*",
         callback = vim.lsp.buf.formatting_sync,
 })
+
+-- Adds ability to do cs"m to replace single line string with multiline.
+vim.api.nvim_exec(
+[[
+let g:surround_{char2nr('m')} = "''\n\n''"
+]], false
+)
