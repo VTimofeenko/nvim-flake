@@ -93,3 +93,9 @@ require('orgmode').setup({
   org_agenda_files = {'~/orgmode/*',},
   org_default_notes_file = '~/orgmode/refile.org',
 })
+
+-- Automatically format on save
+vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*",
+        callback = vim.lsp.buf.formatting_sync,
+})
